@@ -1,0 +1,25 @@
+USE [Test]
+GO
+
+/****** Object:  Table [dbo].[Tr_Bpkb]    Script Date: 10/24/2022 10:32:18 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Tr_Bpkb](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[agreement_number] [varchar](100) NULL,
+	[bpkb_no] [varchar](50) NULL,
+	[branch_id] [varchar](10) NULL,
+	[bpkb_date] [datetime] NULL,
+	[faktur_no] [varchar](100) NULL,
+	[faktur_date] [datetime] NULL,
+	[location_id] [varchar](10) NULL,
+	[police_no] [varchar](20) NULL,
+	[bpkb_date_in] [datetime] NULL
+) ON [PRIMARY]
+GO
+
+
